@@ -4,6 +4,7 @@ public class Application {
     public static void main(String[] args) {
         Faculty faculty = new Faculty();
         Projector projector = new Projector();
+
         Projector[] ps = new Projector[5];
 
         faculty.startProjector(projector);
