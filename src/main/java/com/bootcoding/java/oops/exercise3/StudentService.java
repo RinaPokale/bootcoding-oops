@@ -9,8 +9,7 @@ public class StudentService {
                 s[count++] = students[i];
         }
 
-//        for(Student st: s)
-//            System.out.println(st);
+//
         return s;
     }
 }
