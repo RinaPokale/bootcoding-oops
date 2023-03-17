@@ -14,6 +14,7 @@ public class App {
         float criteriaOfPer = 60;
         Student[] s = studentService.findStudentAboveCriteriaOfPer(students, criteriaOfPer);
 
+        System.out.println("List of Student above" + criteriaOfPer);
         for(Student st: s){
             if(st != null)
                 System.out.println(st.percentage);
