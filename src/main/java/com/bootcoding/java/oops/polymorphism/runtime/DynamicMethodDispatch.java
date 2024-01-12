@@ -7,7 +7,7 @@ public class DynamicMethodDispatch {
 
         Splendor splendor = new Splendor();
         splendor.run();
-//        splendor.start();
+//        splendor.startS();
 
         Bike b = new Splendor(); //upcasting
         b.run();
@@ -15,6 +15,18 @@ public class DynamicMethodDispatch {
 //        ((Splendor)b).startS();
 
     }
+
+/*
+The start() is called based on the type of the reference variable b (which is Bike).
+ If there were an overridden start() in the Splendor class, it would be called at runtime based on the
+ actual type of the object (Splendor) that b refers to.
+ */
+
+
+    private static Bike getBike() {
+        return new Splendor();
+    }
+}
 
 /*
 The method resolution is based on the type of the reference, not the type of the actual object
@@ -25,18 +37,4 @@ type of the reference variable (Bike b) and choose the appropriate method based 
 
 If the start method were overridden in the Splendor class, then the method call would be resolved
 at runtime (dynamic polymorphism) based on the actual type of the object that b refers to.
-
-The start() is called based on the type of the reference variable b (which is Bike).
- If there were an overridden start() in the Splendor class, it would be called at runtime based on the
- actual type of the object (Splendor) that b refers to.
  */
-
-
-
-
-
-
-    private static Bike getBike() {
-        return new Splendor();
-    }
-}
