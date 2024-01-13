@@ -9,5 +9,6 @@ public class Test {
         Vehicle v = new Bicycle();
         v.start();
         v.speed();
+
     }
 }
