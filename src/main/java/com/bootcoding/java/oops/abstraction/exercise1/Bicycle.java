@@ -5,5 +5,4 @@ public class Bicycle extends Vehicle {
     void speed() {
         System.out.println("running at a high speed!!");
     }
-
 }
